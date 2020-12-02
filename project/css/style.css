@@ -1,0 +1,148 @@
+body {
+	margin: 0;
+	padding: 0;
+	width: 1920px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+	width: 100%;
+	height: 60px;
+	margin: 20px auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: rgb(160, 168, 156);
+}
+
+.logo {
+	color: #0c0c0c;
+	display: flex;
+	align-items: center;
+	width: 185px;
+	text-decoration: none;
+	margin-left: 40px;
+	font-size: 34px;
+	font-weight: 500;
+
+}
+
+.menu-list {
+	display: flex;
+
+}
+
+.menu-list-li {
+	display: flex;
+	margin-left: 20px;
+	list-style-type: none;
+	justify-content: space-between;
+	text-decoration: none;
+
+}
+
+.menu-link {
+	text-decoration: none;
+	list-style-type: none;
+	font-size: 24px;
+	font-weight: 500;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: normal;
+	letter-spacing: normal;
+	color: #0c0c0c;
+	border-bottom: #b90b0b solid 1px transparent;
+}
+
+.menu-link:hover {
+	color: #c95621;
+	border-bottom: #c95621 solid 1px;
+	box-sizing: border-box;
+}
+
+.menu-link:active {
+	color: #b90b0b;
+}
+
+.btn-cart {
+	margin: 15px;
+	width: 150px;
+	height: 40px;
+	border-radius: 10px;
+	font-size: 20px;
+	font-weight: 300;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.5;
+	letter-spacing: normal;
+	text-align: center;
+}
+
+.btn-cart:hover {
+	background-color: transparent;
+	border-color: #2f2a2d;
+	color: #2f2a2d;
+}
+
+.cart__list {
+	background: #555;
+	display: none;
+}
+
+.cart__list.shown {
+	display: block;
+}
+
+button {
+	outline: none;
+}
+
+
+.products {
+	column-gap: 30px;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 200px);
+	grid-template-rows: 1fr;
+	padding: 40px 80px;
+	justify-content: space-between;
+}
+
+p {
+	margin: 0 0 5px 0;
+}
+
+.product-item {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	border-radius: 5px;
+	overflow: hidden;
+	margin: 20px 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto
+}
+
+.desc {
+	border: 1px solid #c0c0c040;
+	padding: 15px
+}
+
+.buy-btn {
+	margin-top: 5px;
+	background-color: rgb(125 132 121);
+	padding: 10px 20px;
+	border: 1px solid transparent;
+	color: #fafafa;
+	border-radius: 5px;
+	transition: all ease-in-out;
+	cursor: pointer;
+}
+
+.buy-btn:hover {
+	background-color: transparent;
+	border-color: #2f2a2d;
+	color: #2f2a2d;
+}
